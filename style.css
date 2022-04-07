@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    
+    margin: 0;
+}
+ html{
+     scroll-behavior: smooth;
+
+ }
+ .logo{
+     width: 50px;
+ }
+.title{  
+    cursor:pointer;  
+    
+   }  
+   /*Properties for Nav-bar*/  
+   .navbar{  
+    display:flex;  
+    top:0;  
+    height:10vh;  
+    justify-content:space-between;  
+    align-items:center;   
+    padding:0px 20px;  
+    background:#3e3e3e;  
+   }  
+   .nav-sub{  
+    display:flex;  
+    justify-content:space-between;  
+   }  
+   .list-item {  
+    padding:10px;  
+    list-style:none;  
+    color: #fff;
+   }  
+   .nav-link{  
+    color:inherit;  
+    text-decoration:none;  
+   }  
+    /*Properties for Hamburger*/  
+ .ham{  
+    display:none;  
+    padding:5px;  
+    cursor:pointer;  
+   }  
+   .bar1,.bar2,.bar3{  
+    display:block;  
+    width:35px;  
+    height:3px;  
+    margin:5px auto;  
+    background-color:rgb(91, 80, 174);  
+    transition: 0.4s;  
+   }  
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+   background-color: #2f2f2f;
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+header .container{
+        
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.banner-container{
+    /* margin-top: 300px; */
+
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(154, 34, 181),rgb(19, 177, 183),rgb(190, 17, 167)),url(/web/spide\ man.jpg);
+
+   
+
+
+    
+
+
+}
+.left-sec h1{
+    margin: 0;
+    color: #fff;
+    font-size: 40px;
+}
+.banner-container .container {  
+   margin-top: 116px;
+    display: flex;
+    justify-content: space-evenly;   
+   align-items: center;
+
+}
+
+.left-sec{
+    width: 600px;
+    margin-top: 178px;
+}
+
+.left-sec p{
+    margin: 0;
+    font-size:14px 
+    ;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.855);
+    margin-top: 20px;
+    line-height: 27px;
+}
+.left-sec button{
+    color: rgb(180, 21, 174);
+    background-color: #fff;
+    font-weight: 500;
+    border: none;
+    padding: 12px 50px;
+    border-radius:6px 
+    ;
+    margin-top: 6px;cursor: pointer;
+}
+
+/* right section */
+
+.right-sec{
+    margin-top: 175px;
+    width: 400px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 40px 0;
+    box-shadow: 0 5px 6px rgba(0,0,0,.78);
+}
+
+
+.right-sec h4{
+    font-size: 20px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: rgba(136,136,136)
+}
+.inp{
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.inp label{
+    color: rgba(165,165,165,0.689);
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    transition: 0.4s ease-in-out;
+
+}
+
+.inp input{
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    outline: none;
+    border-bottom: 1px solid #c9c9c982;
+}
+
+.inp input:focus ~ label,
+.inp input:valid ~ label{
+    color:rgb(18, 110, 144) ;
+    top: -10px;
+    font-size: 11px;
+}
+.inp input:focus ~ label,
+.inp input:valid{
+    border-color:rgb(18, 110, 144) ;
+ 
+}
+.submit-sec{
+    text-align: center;
+}
+.submit-btn:hover{
+    box-shadow: 0 2px 6px silver;
+}
+.submit-btn{
+    background-color: #26188c82;
+    color: #Fff;
+    border: none;
+    margin-top: 1px;
+    padding-block-end: 10px 0;
+    border-radius: 6px;
+    width: 300px;
+    cursor: pointer;
+   height: 30px;
+}
+
+
+
+/* SECTION 2 */
+.card-container{
+    width: 360px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 26px rgb(52, 51, 51);
+    overflow: hidden;
+}
+.sec-2{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center; 
+}
+.card-container h1{
+    color: rgba(136,136,136);
+}
+
+.img-container{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+   
+}
+
+.img-container img:hover{
+    transform: scale(1.1) rotate(-5deg);
+}
+
+
+
+footer{
+    text-align: center;
+    color: gray;
+    padding: 15px;
+}
+
+footer span{
+    color: rgb(96, 81, 181);
+    font-weight: bold;
+}
+
+@media (max-width:1056px){
+    .banner-container .container{
+         margin-top: 116px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-sec{
+        font-size: 3px;
+        margin-top: 60px;
+        justify-content: center;
+        margin-left: 200px;
+    }
+
+    .left-sec h1{
+        font-size: 34px;
+    }
+    .left-sec p{
+        font-size: 14px;
+    }
+
+   
+    .right-sec{
+        margin-top: 14px;
+    }
+    .sec-2{
+        height: 1100px;
+        margin-top: 21px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 25px;
+      
+      
+        
+    }
+    .card-container{
+        width: 294px;
+        height: 700px;
+        
+    }
+    .img-container{
+        justify-content: space-evenly;
+        align-items: center;
+        width: 294px;
+        height: 300px;
+
+        
+    }
+    .card-container h1{
+        font-size: 20px;
+       text-align: center;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
+@media only screen and (max-width:768px){  
+    /* *{  
+      overflow:hidden;  
+     }   */
+    .nav-sub{  
+      position:absolute;   
+      
+      top:10vh;  
+      right:0px;  
+      flex-direction:column;  
+      background-color:rgb(255, 255, 255);
+      border: 0.1px solid rgb(18, 17, 17);  
+      border-radius:0px 0px 0px 20px;  
+      transition:transform 0.3s ease-in;  
+      transform:translate(100%);  
+     }  
+    .nav-change{  
+      transform:translate(0%);  
+     }  
+    .ham{  
+      display:block;  
+     }  
+    .change .bar1 {  
+     transform: rotate(45deg) translate(8px,3px);  
+    }  
+    .change .bar2 {  
+     opacity: 0;  
+    }  
+    .change .bar3 {  
+     transform: rotate(-45deg) translate(8px,-3px);  
+    }  
+    .list-item{
+        color: rgb(142, 32, 206);
+    }
+    }  
+
